@@ -121,6 +121,10 @@ header .score span {
     text-align: center;
 }
 
+.result a{
+    pointer-events: none
+}
+
 footer .rules{
     display: table;
     padding: 5px 17px;
