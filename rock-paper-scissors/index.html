@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="css/chlebalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,600,700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/chlebalize.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="flex-between flex-align-center">
+            <div class="score">
+                <p>USER SCORE</p>
+                <span id="user">0</span>
+            </div>
+            <h1>
+                ROCK<br>
+                PAPER<br>
+                SCISSORS
+            </h1>
+            <div class="score">
+                <p>CPU SCORE</p>
+                <span id="cpu">0</span>
+            </div>
+        </header>
+
+        <section class="options select flex-center flex-align-center">
+            <a href="#" value="0" class="flex-center flex-align-center papel" title="Paper"><img src="images/icon-paper.svg" class=""></a>
+            <a href="#" value="1" class="flex-center flex-align-center pedra" title="Rock"><img src="images/icon-rock.svg"></a>
+            <a href="#" value="2" class="flex-center flex-align-center tesoura" title="Scissors"><img src="images/icon-scissors.svg"></a>
+        </section>
+
+        <section class="options result flex-align-center flex-between" style="display: none">
+            <div class="">
+               <h2>YOU PICKED</h2>
+                <div class="you-pick">
+                    
+                </div>
+            </div>
+            <div class="text flex-column flex-align-center">
+                <span>YOU WIN</span>
+                <button onclick="toggleOptions()">PLAY AGAIN</button>
+            </div>
+            <div class="">
+               <h2>CPU PICKED</h2>
+                <div class="cpu-pick">
+                    
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <a href="javascript:void(0);" onclick="toggleModal();" class="rules">RULES</a>
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                Coded by <a href="https://github.com/leonardozambao">Leonardo Zambão</a>.
+            </div>
+        </footer>
+        <section class="modal rules hide">
+            <div class="content">
+                <div class="flex-between flex-align-center">
+                    <h3>RULES</h3>
+                    <a href="javascript:void(0);" onclick="toggleModal();" class="close">X</a>
+                </div>
+                <img src="images/rules.jpg">
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
